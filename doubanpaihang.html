@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="referrer" content="never">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>电影排行</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_768909_23mb5h0ctb9.css">
+    <link rel="stylesheet" href="douban.css">
+</head>
+<body>
+   <main>
+       <section id="top250">
+            <div class="container"></div>   
+           <div class="loading"><span class="iconfont icon-jiazai"></span></div>
+       </section>
+       <section id="beimei">
+            <div class="container"></div> 
+        </section>
+       <section id="search">
+            <div class="sousuo">
+                <span><input type="text" class="input"></span><span><button class="button">搜索</button></span>
+            </div>
+            <div class="container"></div> 
+            <div class="search-result">
+                <div class="loading"><span class="iconfont icon-jiazai"></span></div>
+            </div>
+       </section>
+   </main>
+   <footer>
+       <div class="active"><span class="iconfont icon-paihang"></span><span>Top250</span></div>
+       <div><span class="iconfont icon-beimei"></span><span>北美</span></div>
+       <div><span class="iconfont icon-soushuo"></span><span>搜索</span></div>
+   </footer>
+   <script src="douban.js"></script>
+</body>
+</html>

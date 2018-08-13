@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    position: relative;
+    font-size: 12px;
+    line-height: 1.2;
+    background-color: #fff;
+}
+main {
+    height: calc( 100vh - 50px );
+    -webkit-overflow-scrolling: touch;
+    overflow: scroll;
+}
+main>section {
+    display: none;
+}
+main>section:first-child {
+    display: block;
+}
+.item {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.item>a {
+    display: block;
+    display: flex;
+    color: #000;
+    text-decoration: none;
+}
+.item .cover,.item .cover img {
+    width: 70px;
+}
+.item .detail {
+    flex: 1;
+    padding-left: 10px;
+}
+.item .detail h2 {
+    font-size: 16px;
+}
+.item .detail .extra {
+    color: #999;
+    margin-top: 4px;
+}
+.item .detail .score {
+    color: #ff5722;
+}
+.loading {
+    text-align: center;
+    padding: 5px;
+    display: none;
+}
+.loading .iconfont {
+    display: inline-block;
+    animation: 1s rotate linear infinite ;
+}
+@keyframes rotate {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+footer {
+    position: absolute;
+    border-top: 1px solid #ccc;
+    bottom: 0%;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    
+}
+footer>div {
+    flex: 1;
+    text-align: center;
+}
+footer>.active {
+    color: red;
+}
+footer>div>span {
+    display: block;
+    padding-top: 5px;
+}
+section .sousuo {
+    position: relative;
+    padding: 5px;
+    border: none;
+}
+section .input {
+    margin-top: 5px;
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    display: block;
+    border-radius: 25px;
+    border: 1px solid;
+    outline:none;
+    padding-left: 10px;
+}
+section .button {
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 75%;
+    width: 20%;
+    height: 30px;
+    background: red;
+    display: block;
+    border: 1px solid red;
+    border-radius: 25px;
+    color: #fff;
+    outline:none;
+}
+section .button:active {
+    background: rgba(0,0,0,0.2);
+    color:#000;
+}

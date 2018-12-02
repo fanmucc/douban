@@ -114,6 +114,6 @@ section .button {
     outline:none;
 }
 section .button:active {
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.3);
     color:#000;
 }
